@@ -1,8 +1,16 @@
-<h2>title</h2>
-<p><%= @book.title %></p>
-<h2>body</h2>
-<p><%= @book.body %></p>
+<%= notice %>
+
+<p>
+<string>title:</string>
+<%= @book.title %>
+</p>
+<p>
+  <string>body:</string>
+  <%= @book.body %>
+</p>
 
 <%= link_to "Edit", edit_book_path(@book.id) %>
+
+|
 
 <%= link_to "back", books_path %>
