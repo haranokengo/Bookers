@@ -1,16 +1,20 @@
-<%= notice %>
+<div class="details">
+  <div class="notification">
+    <%= notice %>
+  </div>
 
-<p>
-<string>title:</string>
-<%= @book.title %>
-</p>
-<p>
-  <string>body:</string>
-  <%= @book.body %>
-</p>
+  <p>
+  <string>title:</string>
+  <%= @book.title %>
+  </p>
+  <p>
+    <string>body:</string>
+    <%= @book.body %>
+  </p>
 
-<%= link_to "Edit", edit_book_path(@book.id) %>
+  <%= link_to "Edit", edit_book_path(@book.id) %>
 
-|
+  |
 
-<%= link_to "back", books_path %>
+  <%= link_to "back", books_path %>
+</div>
